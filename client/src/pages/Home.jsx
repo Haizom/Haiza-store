@@ -4,6 +4,7 @@ import Topbar from '../components/Topbar'
 import Slider from '../components/Slider'
 import Categories from '../components/Categories'
 import Products from '../components/ProductsList'
+import Newsletter from '../components/Newsletter'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Slider />
         <Categories />
         <Products />
+        <Newsletter />
     </div>
   )
 }
