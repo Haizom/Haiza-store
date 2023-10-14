@@ -22,3 +22,22 @@ export const sliderItems = [
     },
     
   ];
+
+
+  export const categories = [
+    {
+      id: 1,
+      img: "images/cata1.png",
+      title: "SHIRT STYLE!",
+    },
+    {
+      id: 2,
+      img: "images/cata2.jpeg",
+      title: "LOUNGEWEAR LOVE",
+    },
+    {
+      id: 3,
+      img: "images/cata3.jpeg",
+      title: "LIGHT JACKETS",
+    },
+  ];
