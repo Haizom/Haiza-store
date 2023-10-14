@@ -1,11 +1,12 @@
 import styled from "styled-components";
-import { categories } from "../data";
-import CategoryItem from "./CategoryItem";
+import { popularProducts } from "../data";
+import Product from "./SingleProduct";
 
 const Container = styled.div`
-  display: flex;
-  padding: 20px;
-  justify-content: space-between;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 `;
 
 const TitleContainer = styled.div`
@@ -27,26 +28,26 @@ const TitleUnderline = styled.div`
     bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
-    width: 160px;
+    width: 135px;
     height: 22px;
-    background-color: #fbf;
+    background-color: #f5fa;
     z-index: -1;
 `;
 
-const Categories = () => {
+const Products = () => {
   return (
     <>
         <TitleContainer>
-            <Title>Categories</Title>
+            <Title>Trending</Title>
             <TitleUnderline />
         </TitleContainer>
         <Container>
-            {categories.map((item) => (
-                <CategoryItem item={item} key={item.id} />
-            ))}
+        {popularProducts.map((item) => (
+            <Product item={item} key={item.id} />
+        ))}
         </Container>
     </>
   );
 };
 
-export default Categories;
+export default Products;
