@@ -64,7 +64,7 @@ const Icon = styled.div`
     }
   `;
   
-const SingleProduct = ({ item }) => {
+const ProductCard = ({ item }) => {
     return (
       <Container>
         <Circle />
@@ -84,4 +84,4 @@ const SingleProduct = ({ item }) => {
     );
   };
   
-export default SingleProduct;
+export default ProductCard;

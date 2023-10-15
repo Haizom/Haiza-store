@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { popularProducts } from "../data";
-import SingleProduct from "./SingleProduct";
+import ProductCard from "./ProductCard";
 
 const Container = styled.div`
     padding: 20px;
@@ -13,7 +13,7 @@ const ProductsList = () => {
   return (
         <Container>
           {popularProducts.map((item) => (
-              <SingleProduct item={item} key={item.id} />
+              <ProductCard item={item} key={item.id} />
           ))}
         </Container>
   );

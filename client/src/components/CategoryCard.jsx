@@ -51,7 +51,7 @@ const Title = styled.h1`
 
 
 
-const CategoryItem = ({ item }) => {
+const CategoryCard = ({ item }) => {
   return (
     <Container>
       <Image src={item.img} />
@@ -63,4 +63,4 @@ const CategoryItem = ({ item }) => {
   );
 };
 
-export default CategoryItem;
+export default CategoryCard;

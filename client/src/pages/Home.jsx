@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Topbar from '../components/Topbar'
 import Slider from '../components/Slider'
-import Categories from '../components/Categories'
+import CategoriesList from '../components/CategoriesList'
 import ProductsList from '../components/ProductsList'
 import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
@@ -15,7 +15,7 @@ export default function Home() {
         <Navbar />
         <Slider />
         <SectionTitle title="Categories" color="#fbf" underlineWidth= "160px" />
-        <Categories />
+        <CategoriesList />
         <SectionTitle title="Trending" color="#f5fa" underlineWidth="135px" />
         <ProductsList />
         <Newsletter />
