@@ -3,9 +3,10 @@ import Navbar from '../components/Navbar'
 import Topbar from '../components/Topbar'
 import Slider from '../components/Slider'
 import Categories from '../components/Categories'
-import Products from '../components/ProductsList'
+import ProductsList from '../components/ProductsList'
 import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
+import SectionTitle from '../components/SectionTitle'
 
 export default function Home() {
   return (
@@ -13,8 +14,10 @@ export default function Home() {
         <Topbar />
         <Navbar />
         <Slider />
+        <SectionTitle title="Categories" color="#fbf" underlineWidth= "160px" />
         <Categories />
-        <Products />
+        <SectionTitle title="Trending" color="#f5fa" underlineWidth="135px" />
+        <ProductsList />
         <Newsletter />
         <Footer />
     </div>
